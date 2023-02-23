@@ -1483,6 +1483,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bennytest/components@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "@bennytest/components@workspace:packages/components"
+  languageName: unknown
+  linkType: soft
+
 "@bennytest/constants@workspace:packages/ui-constants":
   version: 0.0.0-use.local
   resolution: "@bennytest/constants@workspace:packages/ui-constants"
@@ -15229,12 +15235,6 @@ __metadata:
   checksum: 54f0fb95621ee60898a38c572c515659e51cc9d9f787fb109cef6fde4befbe1c4602dc999d30110feee37456ad0f1660fa2edcfde6a9a740f86a290999550d30
   languageName: node
   linkType: hard
-
-"y@workspace:packages/components":
-  version: 0.0.0-use.local
-  resolution: "y@workspace:packages/components"
-  languageName: unknown
-  linkType: soft
 
 "yallist@npm:^3.0.2":
   version: 3.1.1

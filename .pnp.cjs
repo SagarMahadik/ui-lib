@@ -16,7 +16,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "y",\
+        "name": "@bennytest/components",\
         "reference": "workspace:packages/components"\
       },\
       {\
@@ -53,13 +53,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@bennytest/box", ["workspace:packages/components/src/Box"]],\
       ["@bennytest/button", ["workspace:packages/components/src/Button"]],\
+      ["@bennytest/components", ["workspace:packages/components"]],\
       ["@bennytest/constants", ["workspace:packages/ui-constants"]],\
       ["@bennytest/footer1", ["workspace:packages/footer"]],\
       ["@bennytest/header1", ["workspace:packages/header"]],\
       ["@bennytest/ui", ["workspace:packages/ui"]],\
       ["remixapp", ["workspace:packages/remixapp"]],\
-      ["root", ["workspace:."]],\
-      ["y", ["workspace:packages/components"]]\
+      ["root", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -2776,6 +2776,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.5.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["typescript-plugin-styled-components", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@bennytest/components", [\
+        ["workspace:packages/components", {\
+          "packageLocation": "./packages/components/",\
+          "packageDependencies": [\
+            ["@bennytest/components", "workspace:packages/components"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -18639,15 +18648,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["xtend", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["y", [\
-        ["workspace:packages/components", {\
-          "packageLocation": "./packages/components/",\
-          "packageDependencies": [\
-            ["y", "workspace:packages/components"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["y18n", [\
