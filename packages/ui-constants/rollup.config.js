@@ -1,5 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
+				import typescript from "@rollup/plugin-typescript";
 import pkg from "./package.json";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import terser from "@rollup/plugin-terser";

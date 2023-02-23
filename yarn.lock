@@ -2124,9 +2124,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@my-library/ui@workspace:packages/ui":
+"@my-library/ui-constants@workspace:packages/ui-constants":
   version: 0.0.0-use.local
-  resolution: "@my-library/ui@workspace:packages/ui"
+  resolution: "@my-library/ui-constants@workspace:packages/ui-constants"
+  dependencies:
+    "@rollup/plugin-alias": ^4.0.3
+    "@rollup/plugin-commonjs": ^24.0.1
+    "@rollup/plugin-multi-entry": ^6.0.0
+    "@rollup/plugin-node-resolve": ^15.0.1
+    "@rollup/plugin-terser": ^0.4.0
+    "@rollup/plugin-typescript": ^11.0.0
+    "@testing-library/react": 13.3.0
+    "@tsconfig/recommended": ^1.0.2
+    "@types/jest": ^27.0.3
+    "@types/react": ^18.0.27
+    "@types/styled-components": ^5.1.26
+    jest: ^27.4.3
+    lerna: ^6.0.1
+    nx: 15.6.3
+    react: 18.1.0
+    react-dom: 18.1.0
+    rimraf: ^3.0.2
+    rollup: 2.79.0
+    rollup-plugin-dts: ^4.0.1
+    rollup-plugin-peer-deps-external: ^2.2.4
+    rollup-plugin-typescript2: ^0.34.1
+    ts-jest: ^27.1.1
+    tslib: ^2.5.0
+    typescript: ^4.9.5
+    typescript-plugin-styled-components: ^2.0.0
   languageName: unknown
   linkType: soft
 
@@ -12996,6 +13022,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-peer-deps-external@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "rollup-plugin-peer-deps-external@npm:2.2.4"
+  peerDependencies:
+    rollup: "*"
+  checksum: 597bc7631f4e3cfc066a7da4e09e507258aba932008148328c1a4b48e7ffa755592ef4bcf0165320bbd5019afbdd326f569cd0c68406d820da9ab52e971c009b
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-typescript2@npm:^0.31.1":
   version: 0.31.2
   resolution: "rollup-plugin-typescript2@npm:0.31.2"
@@ -13081,6 +13116,7 @@ __metadata:
     "@types/styled-components": ^5.1.26
     lerna: ^6.0.1
     nx: 15.6.3
+    rimraf: ^3.0.2
     rollup: 2.79.0
     rollup-plugin-dts: ^4.0.1
     rollup-plugin-typescript2: ^0.34.1
@@ -14302,6 +14338,38 @@ __metadata:
   checksum: 7b3897df38b6fc7d7d9f4dcd658599d81aa2b1fb0d074829dd4e5290f7318dbca1f4af2f45acb833b95b1fe0ed4698662ab61b87e94328eb4c0a0d3435baf924
   languageName: node
   linkType: hard
+
+"ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "ui@workspace:packages/ui"
+  dependencies:
+    "@rollup/plugin-alias": ^4.0.3
+    "@rollup/plugin-commonjs": ^24.0.1
+    "@rollup/plugin-multi-entry": ^6.0.0
+    "@rollup/plugin-node-resolve": ^15.0.1
+    "@rollup/plugin-terser": ^0.4.0
+    "@rollup/plugin-typescript": ^11.0.0
+    "@testing-library/react": 13.3.0
+    "@tsconfig/recommended": ^1.0.2
+    "@types/jest": ^27.0.3
+    "@types/react": ^18.0.27
+    "@types/styled-components": ^5.1.26
+    jest: ^27.4.3
+    lerna: ^6.0.1
+    nx: 15.6.3
+    react: 18.1.0
+    react-dom: 18.1.0
+    rimraf: ^3.0.2
+    rollup: 2.79.0
+    rollup-plugin-dts: ^4.0.1
+    rollup-plugin-peer-deps-external: ^2.2.4
+    rollup-plugin-typescript2: ^0.34.1
+    ts-jest: ^27.1.1
+    tslib: ^2.5.0
+    typescript: ^4.9.5
+    typescript-plugin-styled-components: ^2.0.0
+  languageName: unknown
+  linkType: soft
 
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
