@@ -1,6 +1,6 @@
 {
 	"name": "@bennytest/animation",
-	"version": "0.0.0",
+	"version": "0.0.10",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"type": "module",
@@ -29,6 +29,7 @@
 		"nx": "workspace:^",
 		"react": "workspace:^",
 		"react-dom": "workspace:^",
+		"rimraf": "workspace:^",
 		"rollup": "workspace:^",
 		"rollup-plugin-dts": "workspace:^",
 		"rollup-plugin-peer-deps-external": "workspace:^",
@@ -36,8 +37,7 @@
 		"ts-jest": "workspace:^",
 		"tslib": "workspace:^",
 		"typescript": "^4.9.5",
-		"typescript-plugin-styled-components": "workspace:^",
-		"rimraf": "workspace:^"
+		"typescript-plugin-styled-components": "workspace:^"
 	},
 	"publishConfig": {
 		"access": "public"
