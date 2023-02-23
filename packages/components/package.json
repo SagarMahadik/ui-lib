@@ -23,5 +23,9 @@
 	"bugs": {
 		"url": "https://github.com/SagarMahadik/ui-lib/issues"
 	},
-	"gitHead": "5ec54003c439082a703157ec56fb7d36d9e07b61"
+	"gitHead": "11389ee4b997bcc09e08c6ab8ea0816d151d635b",
+	"publishConfig": {
+		"access": "public"
+	},
+	"private": "false"
 }
