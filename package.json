@@ -15,6 +15,7 @@
 		"@types/react": "^18.0.27",
 		"@types/styled-components": "^5.1.26",
 		"lerna": "^6.0.1",
+		"nx": "15.6.3",
 		"rollup": "2.79.0",
 		"rollup-plugin-dts": "^4.0.1",
 		"rollup-plugin-typescript2": "^0.34.1",

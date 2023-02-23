@@ -26,11 +26,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "remixapp",\
         "reference": "workspace:packages/remixapp"\
+      },\
+      {\
+        "name": "@my-library/ui",\
+        "reference": "workspace:packages/ui"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@my-library/ui", ["workspace:packages/ui"]],\
       ["footer", ["workspace:packages/footer"]],\
       ["header", ["workspace:packages/header"]],\
       ["remixapp", ["workspace:packages/remixapp"]],\
@@ -53,6 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.28"],\
             ["@types/styled-components", "npm:5.1.26"],\
             ["lerna", "npm:6.5.1"],\
+            ["nx", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3"],\
             ["rollup", "npm:2.79.0"],\
             ["rollup-plugin-dts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:4.2.3"],\
             ["rollup-plugin-typescript2", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:0.34.1"],\
@@ -3500,6 +3506,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@my-library/ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["@my-library/ui", "workspace:packages/ui"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@nicolo-ribaudo/eslint-scope-5-internals", [\
         ["npm:5.1.1-v1", {\
           "packageLocation": "./.yarn/cache/@nicolo-ribaudo-eslint-scope-5-internals-npm-5.1.1-v1-87df86be4b-f2e3b2d6a6.zip/node_modules/@nicolo-ribaudo/eslint-scope-5-internals/",\
@@ -3744,6 +3759,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@nrwl/cli", [\
+        ["npm:15.6.3", {\
+          "packageLocation": "./.yarn/cache/@nrwl-cli-npm-15.6.3-b258ac79b1-66219cbf0a.zip/node_modules/@nrwl/cli/",\
+          "packageDependencies": [\
+            ["@nrwl/cli", "npm:15.6.3"],\
+            ["nx", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:15.7.2", {\
           "packageLocation": "./.yarn/cache/@nrwl-cli-npm-15.7.2-2474d04e05-c591306794.zip/node_modules/@nrwl/cli/",\
           "packageDependencies": [\
@@ -3862,6 +3885,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@nrwl/tao", [\
+        ["npm:15.6.3", {\
+          "packageLocation": "./.yarn/cache/@nrwl-tao-npm-15.6.3-9803f83527-ff56f21c7a.zip/node_modules/@nrwl/tao/",\
+          "packageDependencies": [\
+            ["@nrwl/tao", "npm:15.6.3"],\
+            ["nx", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:15.7.2", {\
           "packageLocation": "./.yarn/cache/@nrwl-tao-npm-15.7.2-3970849aae-cbf76f385b.zip/node_modules/@nrwl/tao/",\
           "packageDependencies": [\
@@ -13884,12 +13915,71 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nx", [\
+        ["npm:15.6.3", {\
+          "packageLocation": "./.yarn/unplugged/nx-virtual-8a538e9d6e/node_modules/nx/",\
+          "packageDependencies": [\
+            ["nx", "npm:15.6.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["npm:15.7.2", {\
           "packageLocation": "./.yarn/unplugged/nx-virtual-6e2a4ba292/node_modules/nx/",\
           "packageDependencies": [\
             ["nx", "npm:15.7.2"]\
           ],\
           "linkType": "SOFT"\
+        }],\
+        ["virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3", {\
+          "packageLocation": "./.yarn/unplugged/nx-virtual-8a538e9d6e/node_modules/nx/",\
+          "packageDependencies": [\
+            ["nx", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3"],\
+            ["@nrwl/cli", "npm:15.6.3"],\
+            ["@nrwl/tao", "npm:15.6.3"],\
+            ["@parcel/watcher", "npm:2.0.4"],\
+            ["@swc-node/register", null],\
+            ["@swc/core", null],\
+            ["@types/swc-node__register", null],\
+            ["@types/swc__core", null],\
+            ["@yarnpkg/lockfile", "npm:1.1.0"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.39"],\
+            ["@zkochan/js-yaml", "npm:0.0.6"],\
+            ["axios", "npm:1.3.4"],\
+            ["chalk", "npm:4.1.2"],\
+            ["cli-cursor", "npm:3.1.0"],\
+            ["cli-spinners", "npm:2.6.1"],\
+            ["cliui", "npm:7.0.4"],\
+            ["dotenv", "npm:10.0.0"],\
+            ["enquirer", "npm:2.3.6"],\
+            ["fast-glob", "npm:3.2.7"],\
+            ["figures", "npm:3.2.0"],\
+            ["flat", "npm:5.0.2"],\
+            ["fs-extra", "npm:11.1.0"],\
+            ["glob", "npm:7.1.4"],\
+            ["ignore", "npm:5.2.4"],\
+            ["js-yaml", "npm:4.1.0"],\
+            ["jsonc-parser", "npm:3.2.0"],\
+            ["lines-and-columns", "npm:2.0.3"],\
+            ["minimatch", "npm:3.0.5"],\
+            ["npm-run-path", "npm:4.0.1"],\
+            ["open", "npm:8.4.2"],\
+            ["semver", "npm:7.3.4"],\
+            ["string-width", "npm:4.2.3"],\
+            ["strong-log-transformer", "npm:2.1.0"],\
+            ["tar-stream", "npm:2.2.0"],\
+            ["tmp", "npm:0.2.1"],\
+            ["tsconfig-paths", "npm:4.1.2"],\
+            ["tslib", "npm:2.5.0"],\
+            ["v8-compile-cache", "npm:2.3.0"],\
+            ["yargs", "npm:17.7.1"],\
+            ["yargs-parser", "npm:21.1.1"]\
+          ],\
+          "packagePeers": [\
+            "@swc-node/register",\
+            "@swc/core",\
+            "@types/swc-node__register",\
+            "@types/swc__core"\
+          ],\
+          "linkType": "HARD"\
         }],\
         ["virtual:efc3e89885315508f92435d58a2da3af5387d177b821f125f4ee924497b175297ebcc7e27d9c4b5693e74d83d8fb369de2c7833215e61f93b0c68f7483201971#npm:15.7.2", {\
           "packageLocation": "./.yarn/unplugged/nx-virtual-6e2a4ba292/node_modules/nx/",\
@@ -16061,6 +16151,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.28"],\
             ["@types/styled-components", "npm:5.1.26"],\
             ["lerna", "npm:6.5.1"],\
+            ["nx", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:15.6.3"],\
             ["rollup", "npm:2.79.0"],\
             ["rollup-plugin-dts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:4.2.3"],\
             ["rollup-plugin-typescript2", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:0.34.1"],\
