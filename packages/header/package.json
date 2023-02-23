@@ -26,7 +26,6 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"private": false,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SagarMahadik/lerna-repo.git"
