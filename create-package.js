@@ -68,6 +68,10 @@ const files = [
 		"typescript-plugin-styled-components": "^2.0.0",
 		"rimraf": "^3.0.2"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"private": "false"
 }`,
 	},
 	{
