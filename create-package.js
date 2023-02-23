@@ -28,7 +28,7 @@ const files = [
 	{
 		name: `package.json`,
 		content: `{
-	"name": @my-library/${packageName},
+	"name": "@bennytest/${packageName}",
 	"version": "0.0.0",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
@@ -41,7 +41,7 @@ const files = [
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
 		"test": "jest"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"@rollup/plugin-alias": "^4.0.3",
 		"@rollup/plugin-commonjs": "^24.0.1",
 		"@rollup/plugin-multi-entry": "^6.0.0",
@@ -58,7 +58,6 @@ const files = [
 		"nx": "15.6.3",
 		"react": "18.1.0",
 		"react-dom": "18.1.0",
-		"rimraf": "^3.0.2",
 		"rollup": "2.79.0",
 		"rollup-plugin-dts": "^4.0.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
@@ -66,11 +65,9 @@ const files = [
 		"ts-jest": "^27.1.1",
 		"tslib": "^2.5.0",
 		"typescript": "^4.9.5",
-		"typescript-plugin-styled-components": "^2.0.0"
-	},
-	"devDependencies": {
+		"typescript-plugin-styled-components": "^2.0.0",
 		"rimraf": "^3.0.2"
-	}
+	},
 }`,
 	},
 	{
@@ -129,6 +126,12 @@ export default {
 ];
 
 fs.mkdirSync(packagePath, { recursive: true });
+
+// Create src directory
+fs.mkdirSync(`${packagePath}/src`, { recursive: true });
+
+// Add index.ts file to src directory
+fs.writeFileSync(`${packagePath}/src/index.ts`, "");
 
 files.forEach((file) => {
 	fs.writeFileSync(`${packagePath}/${file.name}`, file.content);

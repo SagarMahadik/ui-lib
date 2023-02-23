@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "0.0.4",
+  "description": "> TODO: description",
+  "author": "sgrmhdk <31389818+SagarMahadik@users.noreply.github.com>",
+  "homepage": "https://github.com/SagarMahadik/ui-lib#readme",
+  "license": "ISC",
+  "main": "lib/components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SagarMahadik/ui-lib.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/components.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/SagarMahadik/ui-lib/issues"
+  }
+}

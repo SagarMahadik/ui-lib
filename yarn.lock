@@ -1419,6 +1419,70 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bennytest/box@workspace:packages/components/src/Box":
+  version: 0.0.0-use.local
+  resolution: "@bennytest/box@workspace:packages/components/src/Box"
+  dependencies:
+    "@rollup/plugin-alias": ^4.0.3
+    "@rollup/plugin-commonjs": ^24.0.1
+    "@rollup/plugin-multi-entry": ^6.0.0
+    "@rollup/plugin-node-resolve": ^15.0.1
+    "@rollup/plugin-terser": ^0.4.0
+    "@rollup/plugin-typescript": ^11.0.0
+    "@testing-library/react": 13.3.0
+    "@tsconfig/recommended": ^1.0.2
+    "@types/jest": ^27.0.3
+    "@types/react": ^18.0.27
+    "@types/styled-components": ^5.1.26
+    jest: ^27.4.3
+    lerna: ^6.0.1
+    nx: 15.6.3
+    react: 18.1.0
+    react-dom: 18.1.0
+    rimraf: ^3.0.2
+    rollup: 2.79.0
+    rollup-plugin-dts: ^4.0.1
+    rollup-plugin-peer-deps-external: ^2.2.4
+    rollup-plugin-typescript2: ^0.34.1
+    ts-jest: ^27.1.1
+    tslib: ^2.5.0
+    typescript: ^4.9.5
+    typescript-plugin-styled-components: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
+"@bennytest/button@workspace:packages/components/src/Button":
+  version: 0.0.0-use.local
+  resolution: "@bennytest/button@workspace:packages/components/src/Button"
+  dependencies:
+    "@rollup/plugin-alias": ^4.0.3
+    "@rollup/plugin-commonjs": ^24.0.1
+    "@rollup/plugin-multi-entry": ^6.0.0
+    "@rollup/plugin-node-resolve": ^15.0.1
+    "@rollup/plugin-terser": ^0.4.0
+    "@rollup/plugin-typescript": ^11.0.0
+    "@testing-library/react": 13.3.0
+    "@tsconfig/recommended": ^1.0.2
+    "@types/jest": ^27.0.3
+    "@types/react": ^18.0.27
+    "@types/styled-components": ^5.1.26
+    jest: ^27.4.3
+    lerna: ^6.0.1
+    nx: 15.6.3
+    react: 18.1.0
+    react-dom: 18.1.0
+    rimraf: ^3.0.2
+    rollup: 2.79.0
+    rollup-plugin-dts: ^4.0.1
+    rollup-plugin-peer-deps-external: ^2.2.4
+    rollup-plugin-typescript2: ^0.34.1
+    ts-jest: ^27.1.1
+    tslib: ^2.5.0
+    typescript: ^4.9.5
+    typescript-plugin-styled-components: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
 "@bennytest/constants@workspace:packages/ui-constants":
   version: 0.0.0-use.local
   resolution: "@bennytest/constants@workspace:packages/ui-constants"
@@ -15165,6 +15229,12 @@ __metadata:
   checksum: 54f0fb95621ee60898a38c572c515659e51cc9d9f787fb109cef6fde4befbe1c4602dc999d30110feee37456ad0f1660fa2edcfde6a9a740f86a290999550d30
   languageName: node
   linkType: hard
+
+"y@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "y@workspace:packages/components"
+  languageName: unknown
+  linkType: soft
 
 "yallist@npm:^3.0.2":
   version: 3.1.1
